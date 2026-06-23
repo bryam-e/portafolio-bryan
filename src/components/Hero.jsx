@@ -1,21 +1,17 @@
 import { TypeAnimation } from 'react-type-animation'
-import Tilt from 'react-parallax-tilt'
-import { motion } from 'framer-motion'
 
 function Hero() {
   return (
-    <motion.section
-      id="inicio"
-      className="hero"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-    >
+    <section id="inicio" className="hero">
 
-      <div className="hero-left">
+      <div className="hero-content">
+
+        <span className="hero-badge">
+          Disponible para proyectos
+        </span>
 
         <h1>
-          Hola, soy <span>Bryan</span>
+          Bryan
         </h1>
 
         <TypeAnimation
@@ -27,37 +23,30 @@ function Hero() {
             'React Developer',
             2000,
           ]}
-          wrapper="span"
+          wrapper="h2"
           repeat={Infinity}
-          className="typing"
         />
 
         <p>
-          Desarrollo aplicaciones modernas utilizando React,
-          PHP, MySQL y tecnologías web actuales.
+          Desarrollo aplicaciones web modernas utilizando
+          React, PHP, MySQL, Electron y tecnologías actuales.
         </p>
 
-        <a href="#proyectos" className="hero-btn">
-  Ver Proyectos
-</a>
+        <div className="hero-buttons">
+
+          <a href="#proyectos">
+            Ver Proyectos
+          </a>
+
+          <a href="#contacto">
+            Contacto
+          </a>
+
+        </div>
 
       </div>
 
-      <div className="hero-right">
-
-        <Tilt
-          glareEnable={true}
-          glareMaxOpacity={0.4}
-          scale={1.05}
-        >
-          <div className="avatar">
-            👨‍💻
-          </div>
-        </Tilt>
-
-      </div>
-
-    </motion.section>
+    </section>
   )
 }
 
