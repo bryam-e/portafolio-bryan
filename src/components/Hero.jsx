@@ -1,53 +1,52 @@
-import { TypeAnimation } from 'react-type-animation'
+import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section id="inicio" className="hero">
-
+    <motion.section
+      id="inicio"
+      className="hero"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <div className="hero-content">
 
         <span className="hero-badge">
-          Disponible para proyectos
+          🚀 Portafolio Profesional
         </span>
 
         <h1>
-          Bryan
+          BRYAN
         </h1>
 
-        <TypeAnimation
-          sequence={[
-            'Desarrollador Web',
-            2000,
-            'Frontend Developer',
-            2000,
-            'React Developer',
-            2000,
-          ]}
-          wrapper="h2"
-          repeat={Infinity}
-        />
+        <h2>
+          DESARROLLADOR WEB FULL STACK
+        </h2>
 
         <p>
-          Desarrollo aplicaciones web modernas utilizando
-          React, PHP, MySQL, Electron y tecnologías actuales.
+          Desarrollo aplicaciones web, sistemas de gestión,
+          bases de datos y soluciones tecnológicas utilizando
+          React, PHP, MySQL, Electron y Arduino.
         </p>
 
-        <div className="hero-buttons">
+        <a href="#proyectos" className="hero-btn">
+          Ver Proyectos
+        </a>
 
-          <a href="#proyectos">
-            Ver Proyectos
-          </a>
+        <div className="hero-tech">
 
-          <a href="#contacto">
-            Contacto
-          </a>
+          <span>React</span>
+          <span>PHP</span>
+          <span>MySQL</span>
+          <span>Arduino</span>
+          <span>Electron</span>
+          <span>Vite</span>
 
         </div>
 
       </div>
-
-    </section>
-  )
+    </motion.section>
+  );
 }
 
-export default Hero
+export default Hero;
