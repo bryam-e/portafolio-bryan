@@ -1,174 +1,48 @@
-html{
-  scroll-behavior:smooth;
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-body{
-  background:#020617;
-  color:white;
-  font-family:'Segoe UI',sans-serif;
-}
-
-/* NAVBAR */
-
-.navbar{
-  position:fixed;
-  top:0;
-  width:100%;
-  height:70px;
-
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-
-  padding:0 20px;
-
-  background:rgba(2,6,23,.8);
-
-  backdrop-filter:blur(12px);
-
-  z-index:1000;
-}
-
-.logo{
-  color:#38bdf8;
-  font-size:1.3rem;
-  font-weight:bold;
-}
-
-/* HERO */
-
-.hero{
-  min-height:100vh;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
+.about{
   padding:100px 20px;
-
   text-align:center;
 }
 
-.hero-content{
-  max-width:700px;
-}
-
-.hero-badge{
-  background:#0f172a;
-
-  border:1px solid #38bdf8;
-
-  padding:8px 16px;
-
-  border-radius:30px;
-
-  display:inline-block;
-
+.about h2{
+  font-size:3rem;
+  color:#38bdf8;
   margin-bottom:25px;
 }
 
-.hero h1{
-  font-size:4rem;
-}
-
-.hero h2{
-  color:#38bdf8;
-  margin-top:10px;
-}
-
-.hero p{
-  margin-top:20px;
-
+.about-description{
+  max-width:800px;
+  margin:auto;
   line-height:1.8;
-
   color:#cbd5e1;
 }
 
-.hero-buttons{
-  margin-top:35px;
+.about-tech{
+  margin-top:40px;
 
   display:flex;
+  flex-wrap:wrap;
 
   justify-content:center;
 
   gap:15px;
 }
 
-.hero-buttons a{
-  padding:15px 25px;
+.about-tech span{
 
-  border-radius:15px;
+  padding:12px 20px;
 
-  text-decoration:none;
+  background:rgba(255,255,255,.05);
 
-  background:#38bdf8;
+  border:1px solid rgba(255,255,255,.1);
 
-  color:white;
-}
-
-/* ABOUT */
-
-.about{
-  padding:80px 20px;
-}
-
-.about h2{
-  text-align:center;
-
-  font-size:2.5rem;
-
-  color:#38bdf8;
-}
-
-.about-description{
-  text-align:center;
-
-  max-width:700px;
-
-  margin:20px auto 40px;
-}
-
-.about-grid{
-  display:grid;
-
-  grid-template-columns:
-  repeat(auto-fit,minmax(180px,1fr));
-
-  gap:20px;
-}
-
-.about-card{
-  background:#0f172a;
-
-  padding:25px;
-
-  border-radius:20px;
-
-  text-align:center;
+  border-radius:999px;
 
   transition:.3s;
 }
 
-.about-card:hover{
-  transform:translateY(-8px);
-}
+.about-tech span:hover{
 
-/* MOBILE */
+  border-color:#38bdf8;
 
-@media(max-width:768px){
-
-  .hero h1{
-    font-size:2.8rem;
-  }
-
-  .hero-buttons{
-    flex-direction:column;
-  }
-
+  transform:translateY(-3px);
 }

@@ -5,27 +5,19 @@ function About() {
       <h2>Sobre mí</h2>
 
       <p className="about-description">
-        Soy estudiante de Ingeniería Informática apasionado por el
-        desarrollo de software y la creación de soluciones digitales.
+        Soy estudiante de Ingeniería Informática y desarrollador web.
+        Me apasiona crear aplicaciones modernas utilizando React,
+        PHP, MySQL, Electron y Arduino.
       </p>
 
-      <div className="about-grid">
+      <div className="about-tech">
 
-        <div className="about-card">
-          💻 Desarrollo Web
-        </div>
-
-        <div className="about-card">
-          ⚛️ React y JavaScript
-        </div>
-
-        <div className="about-card">
-          🗄️ Bases de Datos
-        </div>
-
-        <div className="about-card">
-          🤖 Arduino y Automatización
-        </div>
+        <span>⚛️ React</span>
+        <span>🐘 PHP</span>
+        <span>🗄️ MySQL</span>
+        <span>⚡ Vite</span>
+        <span>🤖 Arduino</span>
+        <span>💻 Electron</span>
 
       </div>
 
