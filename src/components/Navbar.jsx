@@ -3,10 +3,10 @@ function Navbar() {
     <nav className="navbar">
 
       <div className="logo">
-        Bryan.dev
+        &lt;Bryan /&gt;
       </div>
 
-      <ul>
+      <ul className="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
